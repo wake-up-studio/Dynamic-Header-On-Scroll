@@ -1,0 +1,176 @@
+@import url("https://fonts.cdnfonts.com/css/lc-mogi");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap");
+@import "variables/_var.css";
+@import "variables/_colors.css";
+@import "nav.css";
+@import "landing/accueil.css";
+@import "landing/presentation.css";
+@import "landing/projets.css";
+@import "cv/cv-accueil.css";
+@import "cv/cv-stage.css";
+@import "responsive/nav-responsive.css";
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* ***********************************
+GENERAL
+*********************************** */
+body {
+  background-color: var(--beige);
+  color: var(--vert);
+  font-family: "Rokkitt", serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "LC Mogi", sans-serif;
+}
+
+h1 {
+  font-size: 197px;
+  color: #eedfbb;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  color: var(--orange);
+  font-size: 128px;
+}
+
+h3 {
+  color: var(--jaune);
+  font-size: 32px;
+}
+
+button {
+  width: 335px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--vert);
+  color: var(--beige);
+  font-size: 2.8rem;
+  font-family: "Rokkitt";
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: var(--jaune);
+  transform: scale(1.1);
+}
+
+/* ***********************************
+LAYOUT
+*********************************** */
+.container-green {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--vert);
+}
+
+.container-beige {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--beige);
+  color: var(--vert);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  color: var(--vert);
+}
+
+.box {
+  margin: 0 auto;
+  max-width: 1144px;
+  height: 100vh;
+}
+
+.box-center {
+  margin: 0px auto;
+  max-width: 1144px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  background-color: var(--vert);
+  height: 800px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+/* ***********************************
+FOOTER
+*********************************** */
+.footer {
+  overflow: hidden;
+  .footer-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .WU-sigle-left {
+      position: absolute;
+      height: 100%;
+      transform: translateX(-50%);
+    }
+    .WU-sigle-right {
+      position: absolute;
+      height: 100%;
+      right: 0px;
+      transform: translateX(50%);
+    }
+
+    .footer-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 80%;
+      margin: auto;
+      z-index: 1;
+      flex-wrap: wrap;
+
+      .menu-footer {
+        margin: 0 auto;
+
+        h3 {
+          margin-bottom: 1.7rem;
+        }
+        ul {
+          color: var(--beige);
+          margin: 0 auto;
+          width: 100%;
+          text-align: left;
+
+          li {
+            font-size: 2.8rem;
+            font-weight: 500;
+            padding: 1.7rem;
+            color: var(--beige);
+          }
+        }
+      }
+    }
+  }
+}

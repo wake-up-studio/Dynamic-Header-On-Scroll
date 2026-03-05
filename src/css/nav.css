@@ -1,0 +1,59 @@
+/* ***********************************
+NAV
+*********************************** */
+.nav-opening {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32%; /*doit passer à 41%*/
+  font-size: 26px;
+  font-family: "LC Mogi";
+  padding: 0 2rem;
+  position: fixed;
+  z-index: 2;
+  margin-top: 3.75rem;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: width ease-out 0.3s;
+}
+
+.logo {
+  display: none;
+  width: 120px;
+  fill: var(--vert);
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+.menu li {
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  color: var(--vert);
+}
+
+.menu li:hover {
+  border-radius: 50px;
+  background: rgba(230, 230, 230, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(7.8px);
+  outline: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* *******************************************
+MEDIA QUERY
+******************************************* */
+@media screen (max-width: 1224px) {
+}
+
+@media screen and (max-width: 576px) {
+  .nav-opening {
+    display: none;
+}
