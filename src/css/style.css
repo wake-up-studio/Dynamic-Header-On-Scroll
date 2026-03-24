@@ -27,6 +27,8 @@ body {
   background-color: var(--beige);
   color: var(--vert);
   font-family: "Rokkitt", serif;
+  width: 100%;
+  height: 100%;
 }
 
 h1,
