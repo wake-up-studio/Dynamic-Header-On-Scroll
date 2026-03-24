@@ -23,8 +23,8 @@ body {
 GENERAL
 *********************************** */
 body {
-  background-color: var(--beige);
-  color: var(--vert);
+  background-color: #eedfbb;
+  color: #07311d;
   font-family: "Rokkitt", serif;
   width: 100%;
   height: 100%;
